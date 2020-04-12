@@ -13,17 +13,18 @@ const pool = new Pool({
 })
 
 
-// app.get('/', (req, res) => {
-//     // pool.query('Select * FROM users')
-//     // .then(result => {
-//     //     return result.rows
-//     // })
-//     // .then(data => {
-//     //     res.status(200).send(data)
-//     // })
-//     // .catch(err => {
-//     //     res.status(500).send(err)
-//     // })
+app.get('/', (req, res) => {
+    pool.query('Select * FROM users')
+    .then(result => {
+        return result.rows
+    })
+    .then(data => {
+        res.status(200).send(data)
+    })
+    .catch(err => {
+        res.status(500).send(err)
+    })
+})
 
 
 //     pool.connect((err, client, done) => {
