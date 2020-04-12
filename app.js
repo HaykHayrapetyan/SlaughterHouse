@@ -49,10 +49,15 @@ const pool = new Pool({
 // })
 
 
+
+
 app.use('/api', require('./Controllers'))
 app.get('/', (req, res) => {
     res.send('hello')
 })
 
+app.get('/other', (req, res) => {
+    res.send('helloOther')
+})
 
 app.listen(3000)
