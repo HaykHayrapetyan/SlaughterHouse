@@ -52,7 +52,8 @@ app.get('/', (req, res) => {
 
 app.use('/api', require('./Controllers'))
 app.get('/', (req, res) => {
-    res.send('hello')
+    res.send('hello world!')
+    console.log("log")
 })
 
 
