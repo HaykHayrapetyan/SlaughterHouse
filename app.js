@@ -178,6 +178,17 @@ app.get('/', async (req, res) => {
     // })    
 })
 
+app.get('/newbranch', async (req, res) => {
+    
+    // User.findAll({raw: true})
+    // .then(data => {
+    //     console.log(data)
+    // })
+    // .catch(err => {
+    //     console.log(err)
+    // })    
+})
+
 app.listen(3000)
 
 
